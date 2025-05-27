@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+
+        <!-- Predefined Task Input -->
+        <input type="text" id="newPredefinedTask" placeholder="Add new predefined task">
+        <button id="savePredefinedTasks">Save Task</button>
+
+        <select id="taskInput">
+            <option value="" disabled selected>Select a task</option>
+        </select>
+
+        <input type="text" id="customTaskInput" placeholder="Enter your task..." style="display:none;">
+        <input type="text" id="userName" placeholder="User Name" required>
+        <input type="tel" id="userPhno" placeholder="User Phone" required>
+        <input type="text" id="userVillage" placeholder="User Village" required>
+        <input type="text" id="eventVillage" placeholder="Event Village" required>
+        
+        <div class="date-time-container">
+            <input type="date" id="eventDate" placeholder=" " />
+            <span class="placeholder-text" id="eventDatePlaceholder">Select Date</span>
+        </div>
+        
+        <div class="date-time-container">
+            <input type="time" id="startTime" placeholder=" " />
+            <span class="placeholder-text" id="startTimePlaceholder">Start Time</span>
+        </div>
+        
+        <div class="date-time-container">
+            <input type="time" id="endTime" placeholder=" " />
+            <span class="placeholder-text" id="endTimePlaceholder">End Time</span>
+        </div>
+        
+        <input type="text" id="assignedToName" placeholder="Assigned To" required>
+        <input type="tel" id="assignedToMobile" placeholder="Assigned To Mobile" required>
+
+        <button id="addTask">Add Task</button>
+        <div id="taskListContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

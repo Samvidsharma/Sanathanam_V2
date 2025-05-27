@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #6f42c1, #d63384);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+select, input[type="text"], input[type="tel"], input[type="date"], input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select {
+    background-color: #fff;
+    color: #333;
+}
+
+input[type="text"], input[type="tel"], input[type="date"], input[type="time"] {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#taskListContainer {
+    margin-top: 20px;
+}
+
+/* Task Item Styling */
+.task-item {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.task-item:hover {
+    transform: scale(1.02);
+}
+
+.task-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #ffd700; /* Gold color for task titles */
+}
+
+.task-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item li {
+    margin: 5px 0;
+    color: #f8f9fa;
+}
+
+/* Delete Button Styling */
+.delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Adjusted for better spacing */
+    right: 10px; /* Adjusted for better spacing */
+    transition: background-color 0.3s;
+    font-size: 14px;
+    width: 20%;
+}
+
+.delete:hover {
+    background-color: #c82333;
+}
+
+.placeholder-text {
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 25px;
+    font-size: 16px;
+}
+
+.date-time-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+input[type="date"],
+input[type="time"] {
+    padding-left: 10px;  /* Create space for the fake placeholder */
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    input[type="text"], input[type="tel"], input[type="date"], input[type="time"], button {
+        font-size: 14px;
+    }
+
+    .task-item h3 {
+        font-size: 1.2em;
+    }
+}

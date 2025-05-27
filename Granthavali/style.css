@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+}
+
+.container {
+  max-width: 900px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #1a237e;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+#search {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#sloka-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: -8px;
+  list-style: none;
+}
+
+#sloka-list li {
+  background: #fff;
+  padding: 16px;
+  margin: 8px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  
+  flex: 1 1 100%; /* Default: mobile full width */
+  min-width: 0;   /* Prevent overflow */
+}
+
+#sloka-list li:hover {
+  background-color: #e3f2fd;
+  transform: translateY(-3px);
+}
+
+/* Tablet (min 600px) - 2 items per row */
+@media screen and (min-width: 600px) {
+  #sloka-list li {
+    flex: 1 1 calc(50% - 16px);
+  }
+}
+
+/* Desktop (min 900px) - 3 items per row */
+@media screen and (min-width: 900px) {
+  #sloka-list li {
+    flex: 1 1 calc(33.333% - 16px);
+  }
+}

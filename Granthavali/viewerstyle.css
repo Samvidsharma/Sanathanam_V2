@@ -1,0 +1,88 @@
+body {
+    background-color: #111;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar {
+    background: #222;
+    padding: 10px;
+    position: relative;
+    z-index: 1050;
+    /* bootstrap modal z-index is 1050, keep above viewer */
+}
+
+.search-results-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 0 0 0.375rem 0.375rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.search-results-dropdown .close-btn {
+    text-align: right;
+    padding: 5px 10px 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    color: white;
+}
+
+.search-results-dropdown div.result-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-top: 1px solid #444;
+}
+
+.search-results-dropdown div.result-item:hover {
+    background-color: #555;
+}
+
+.viewer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+}
+
+iframe,
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+}
+
+.nav-buttons {
+    background: #222;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-buttons button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.nav-buttons button:disabled {
+    opacity: 0.4;
+    cursor: default;
+}

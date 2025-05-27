@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tarabalam.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<title>Dropdown Menu</title>
+
+</head>
+<body>
+    <div class="d-flex">
+      <div id="my-dropdown1" class="m-3 dropdown">
+        <select id="mydropdownSelect1" title="select" class="dropdown-select">
+        </select>
+
+      </div>
+
+      <div id="my-dropdown2" class="m-3 dropdown">
+        <select id="mydropdownSelect2" title="select" class="dropdown-select">
+        </select>
+
+      </div>
+
+        <div class="m-3">
+            <!-- <label for="submit">సరిపోయే నక్షత్రాలు చూపించండి</label> -->
+            <input id="submit" type="submit" value="సరిపోయే నక్షత్రాలు చూపించండి">
+        </div>
+    </div>
+
+    <div id="result" class="result d-flex">
+
+      <div class="result-item " id="matches"></div>
+      <div class="result-item " id="non-matches"></div>
+      <div class="result-item " id="matches-but-can't-use"></div>
+    </div>
+<script src="./tarabalam.js"></script>
+
+</body>

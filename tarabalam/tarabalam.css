@@ -1,0 +1,146 @@
+*{
+  box-sizing: border-box;
+}
+.noto-serif telugu-example {
+    font-family: "Noto Serif Telugu", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Style the dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the dropdown button */
+  .dropdown-select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the dropdown options */
+  .dropdown-select option {
+    padding: 10px;
+  }
+  
+  /* Style the dropdown options on hover */
+  .dropdown-select option:hover {
+    background-color: #ddd;
+  }
+  
+  /* Style the dropdown menu */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ 
+  .m-3{
+      margin: 3px;
+  }
+  .color-red{
+    color: #ff0000;
+  }
+  .color-green{
+    color:#00ff00;
+  }
+  .color-orange{
+    color: #fc7a01;
+  }
+  .bg-unused{
+    background-color: #9bb2c761;
+  }
+  .bg-match{
+    background-color:#4a4a4abf;
+  }
+  .bg-unmatch{
+    background-color:#aceb9d96;;
+  }
+  .bg-green{
+    background-color: #00ff00;
+  }
+  .bg-red{
+    background-color: #ff0000;
+  }
+  .bg-grey{
+    background-color: grey;
+  }
+  .result-item{
+    width: 100%;
+    margin: 2px;
+    border: 1px rgba(59, 56, 56, 0.432) solid;
+    /* height:200px; */
+  }
+
+  .text-center{
+    text-align: center;
+  }
+  .result-item div{
+    justify-content: space-around;
+  }
+  .result-item p{
+    margin-top: 0%;
+    /* height: 50px; */
+  }
+  .d-sm-flex{
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: 320px) {
+    .d-flex{
+      display: block;
+    }
+    }
+   
+  @media screen and (min-width: 768px) {
+  .dropdown {
+    width: 50%; /* Adjust width for larger screens */
+    }
+    .d-flex {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .result{
+      align-items: start;
+      justify-content: space-around;
+    }
+  }
+
+@media screen and (min-width: 992px) {
+  .dropdown {
+    width: 33.33%; /* Adjust width for even larger screens */
+  }
+  .result-item{
+    width: 25%;
+    margin: 2px;
+  }
+  .only-in-mobile{
+    display: none;
+  }
+  #match{
+    display: block !important;
+  }
+  #unmatch{
+    display: block !important;
+  }
+  #unused{
+    display: block !important;
+  }
+}
